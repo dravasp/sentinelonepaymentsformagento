@@ -22,7 +22,7 @@
     },
     "require": {
         "php": "~7.2|~8.0|^8.1.10",
-        "ext-json/ext-json": "dev-main",
+        "ext-json/ext-json": "*",
         "openssl/php-rsa": "dev-master",
         "php-soap/ext-soap-engine": "v1.3.0",
         "magento/framework": "~103.0.4",
