@@ -7,7 +7,7 @@
         </group>
     </groups>
     <methods>
-        <method name="easypay">
+        <method name="easypay-checkout">
             <allow_multiple_address>1</allow_multiple_address>
         </method>
     </methods>
