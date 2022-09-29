@@ -10,7 +10,7 @@
     <default>
         <payment>
             <easypay-checkout>
-                <active>0</active>
+                <active>1</active>
                 <model>SentinelOne\CheckoutPaymentGateway\Model\Payment\EasyPay</model>
                 <order_status>pending</order_status>
                 <title>SentinelOnePayments.com</title>
