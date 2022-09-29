@@ -1,0 +1,75 @@
+{
+    "name": "dravasp/sentinelonepaymentsformagento",
+    "description": "SentinelOne Internet Payment Gateway Module for Magento 2.4x optimised for Bitnami",
+    "version": "1.0.1",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "9.5.25",
+        "friendsofphp/php-cs-fixer": "v3.11.0",
+        "squizlabs/php_codesniffer": "3.7.1",
+        "magento/magento-coding-standard": "22"
+    },
+    "require": {
+        "php": "~7.*|~8.0|^8.1.10",
+        "ext-json/ext-json": "dev-main",
+        "openssl/php-rsa": "dev-master",
+        "php-soap/ext-soap-engine": "v1.3.0",
+        "magento/framework": "~103.0.4",
+        "magento/module-sales": "~103.0.4",
+        "magento/module-checkout": "~100.4.4",
+        "magento/module-payment": "~100.4.4",
+        "magento/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "sentinelone",
+        "magento commerce",
+        "secure payments",
+        "atmanirbhar bharat india",
+        "payment gateway",
+        "wallets and emis",
+        "netbanking and upi",
+        "dispute resolution built-in",
+        "payment retry"
+    ],
+    "authors": [
+        {
+            "name": "WE SKY PRINT LLP",
+            "homepage": "https://github.com/dravasp",
+            "email": "hello@weskyprint.com",
+            "role": "Author"
+        },
+        {
+            "name": "Magento Core team",
+            "homepage": "https://developer.adobe.com",
+            "email": "help@adobe.com",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/dravasp/sentinelonepaymentsformagento",
+        "issues": "https://github.com/dravasp/sentinelonepaymentsformagento/issues",
+        "rss":    "https://github.com/dravasp/sentinelonepaymentsformagento/releases.atom",
+        "docs":   "https://github.com/dravasp/sentinelonepaymentsformagento/blob/main/README.md"
+    },
+    "homepage": "https://sentinelonepayments.com",
+    "suggest": {
+        "magento/module-checkout-agreements": "~100.4.4"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "SentinelOne\\CheckoutPaymentGateway\\": ""
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <easypay-checkout>
+                <active>0</active>
+                <model>SentinelOne\CheckoutPaymentGateway\Model\Payment\EasyPay</model>
+                <order_status>pending</order_status>
+                <title>SentinelOnePayments.com</title>
+                <currency>INR</currency>
+                <sort_order>1</sort_order>
+                <allowspecific>1</allowspecific>
+                <group>Offline</group>
+            </easypay-checkout>
+        </payment>
+    </default>
+</config>
