@@ -22,7 +22,7 @@ Instructions:
 - TLS 1.3 with HTTP2.Quic Enabled
 
 [] Changes for going Live.
-- Insert your (variables) `MERCHANT IDENTIFIER` + `SALT/ACCESS KEY` + `SECRET KEY` + `TRADE ACCESS CODE` for Production Environment in Stores > Configuration > Sales > Payment Methods > Layer by Open Financial Technologies (India)
+- Insert your (variables) `MERCHANT IDENTIFIER` + `SALT/ACCESS KEY` + `SECRET KEY` + `TRADE ACCESS CODE` for Production Environment in Stores > Configuration > Sales > Payment Methods > SentinelOnePayments.com Internet Payment Gateway
 
 [] Enabling the module and configuring it with your SentinelOnePayments.com Merchant credentials
 - Login to your Magento Admin and go to Store > Configuration.
@@ -105,7 +105,7 @@ Account Reconciliation / Revenue Insights + Affordable Pricing for Growth - Scal
   
   Uninstall
 ```	
-	sudo magento-cli module:disable Open_Layerpg
+	sudo magento-cli module:disable SentinelOne_CheckoutPaymentGateway
 	composer remove dravasp/sentinelonepaymentsformagento
 	sudo magento-cli setup:upgrade
 	sudo magento-cli module:status
@@ -114,7 +114,7 @@ Account Reconciliation / Revenue Insights + Affordable Pricing for Growth - Scal
   Hard Delete an Plugin / Extension
 ```
 	sudo nano /bitnami/magento/app/etc/config.php
-	Page Down to Open_Layerpg
+	Page Down to SentinelOne_CheckoutPaymentGateway
 	Delete and make sure there are no trailing spaces
 	CTRL/CMD + X and Click Y to Save without Renaming the file
 ```
