@@ -5,8 +5,8 @@
 * See COPYING.txt for license details.
 */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Magento_SamplePaymentGateway" setup_version="2.0.0">
+<config xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <module setup_version="2.0.0" name="Magento_SamplePaymentGateway">
     <sequence>
         <module name="Magento_Sales"/>
         <module name="Magento_Payment"/>
